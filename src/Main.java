@@ -20,6 +20,14 @@ public class Main {
         System.out.println("Su fecha de lanzamiento es: "+ pelicula2.fechaLanzamiento);
         System.out.println("Su duración es: " + pelicula2.duracionMinutos + " minutos.");
 
+        //dirección de memoria en java es unica del objeto, esta dirección aparece al imprimir un objeto
+        System.out.println(pelicula2);
+
+        pelicula1.muestraFichaTecnica();
+        pelicula2.muestraFichaTecnica();
+
+
+
 
 
     }

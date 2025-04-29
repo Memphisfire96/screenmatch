@@ -4,6 +4,8 @@ public class Peliculas {
     int fechaLanzamiento;
     int duracionMinutos;
     boolean incluidoEnPlan;
+    double sumaEvaluaciones;
+    int totalEvaluaciones;
 
     //creo un metodo
     void muestraFichaTecnica(){
@@ -11,6 +13,14 @@ public class Peliculas {
         System.out.println("Su fecha de lanzamiento es: "+ fechaLanzamiento);
         System.out.println("Su duración es: " + duracionMinutos + " minutos.");
 
+    }
+
+    void evalua( double nota){
+        sumaEvaluaciones = sumaEvaluaciones + nota;
+        totalEvaluaciones++;
+    }
+    double calcularMedia(){
+        return sumaEvaluaciones / totalEvaluaciones;
     }
 
 

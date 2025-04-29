@@ -26,6 +26,16 @@ public class Main {
         pelicula1.muestraFichaTecnica();
         pelicula2.muestraFichaTecnica();
 
+        //prueba de metodo evalua
+        pelicula1.evalua(10);
+        pelicula1.evalua(10);
+        pelicula1.evalua(10);
+        System.out.println(pelicula1.sumaEvaluaciones);
+        System.out.println(pelicula1.totalEvaluaciones);
+        System.out.println(pelicula1.calcularMedia());
+
+
+
 
 
 

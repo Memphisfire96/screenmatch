@@ -30,13 +30,10 @@ public class Main {
         pelicula1.evalua(10);
         pelicula1.evalua(10);
         pelicula1.evalua(10);
-        System.out.println(pelicula1.sumaEvaluaciones);
-        System.out.println(pelicula1.totalEvaluaciones);
+        System.out.println(pelicula1.getTotalEvaluaciones());
         System.out.println(pelicula1.calcularMedia());
 
-
-
-
+        System.out.println(pelicula1.calcularMedia());
 
 
 

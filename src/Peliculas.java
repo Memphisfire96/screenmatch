@@ -4,8 +4,14 @@ public class Peliculas {
     int fechaLanzamiento;
     int duracionMinutos;
     boolean incluidoEnPlan;
-    double sumaEvaluaciones;
-    int totalEvaluaciones;
+    private double sumaEvaluaciones;
+    private int totalEvaluaciones;
+
+    //metodo para obtener valores privados
+    int getTotalEvaluaciones(){
+        return totalEvaluaciones;
+    }
+
 
     //creo un metodo
     void muestraFichaTecnica(){

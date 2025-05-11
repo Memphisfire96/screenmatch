@@ -1,6 +1,8 @@
+package com.aluracursos.screenmatch.modelos;
+
 public class Peliculas {
     //atributos
-    String nombre;
+   public String nombre;
     int fechaLanzamiento;
     int duracionMinutos;
     boolean incluidoEnPlan;

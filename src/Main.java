@@ -1,3 +1,5 @@
+import com.aluracursos.screenmatch.modelos.Peliculas;
+
 public class Main {
     public static void main(String[] args) {
         //creo un objeto

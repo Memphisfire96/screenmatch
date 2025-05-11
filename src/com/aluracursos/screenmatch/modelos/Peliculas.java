@@ -10,24 +10,24 @@ public class Peliculas {
     private int totalEvaluaciones;
 
     //metodo para obtener valores privados
-    int getTotalEvaluaciones(){
+   public int getTotalEvaluaciones(){
         return totalEvaluaciones;
     }
 
 
     //creo un metodo
-    void muestraFichaTecnica(){
+   public void muestraFichaTecnica(){
         System.out.println("Mi pelicula es: "+ nombre);
         System.out.println("Su fecha de lanzamiento es: "+ fechaLanzamiento);
         System.out.println("Su duración es: " + duracionMinutos + " minutos.");
 
     }
 
-    void evalua( double nota){
+    public void evalua( double nota){
         sumaEvaluaciones = sumaEvaluaciones + nota;
         totalEvaluaciones++;
     }
-    double calcularMedia(){
+    public double calcularMedia(){
         return sumaEvaluaciones / totalEvaluaciones;
     }
 

@@ -9,6 +9,35 @@ public class Peliculas {
     private double sumaEvaluaciones;
     private int totalEvaluaciones;
 
+    //metodos para consultar
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getFechaLanzamiento() {
+        return fechaLanzamiento;
+    }
+
+    public int getDuracionMinutos() {
+        return duracionMinutos;
+    }
+
+
+    //metodos para ingresar datos
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public void setFechaLanzamiento(int fechaLanzamiento) {
+        this.fechaLanzamiento = fechaLanzamiento;
+    }
+
+    public void setDuracionMinutos(int duracionMinutos) {
+        this.duracionMinutos = duracionMinutos;
+    }
+
     //metodo para obtener valores privados
    public int getTotalEvaluaciones(){
         return totalEvaluaciones;

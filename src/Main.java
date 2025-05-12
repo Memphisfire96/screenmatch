@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Peliculas;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -8,7 +9,7 @@ public class Main {
         //creo atributos
         pelicula1.setNombre("Encanto");
         pelicula1.setFechaLanzamiento(2009);
-        pelicula1.setDuracionMinutos(177);
+        pelicula1.setDuracionMinutos(120);
         //imprimo en consola
         System.out.println("Mi pelicula es: "+ pelicula1.getNombre());
         System.out.println("Su fecha de lanzamiento es: "+ pelicula1.getFechaLanzamiento());
@@ -47,6 +48,12 @@ public class Main {
         casaDragon.setEpisodiosPorTemporada(10);
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionMinutos());
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(pelicula1);
+        calculadora.incluye(casaDragon);
+        System.out.println(calculadora.getTiempoTotal());
+
 
 
 

@@ -1,6 +1,9 @@
 package com.aluracursos.screenmatch.modelos;
+
+import com.aluracursos.screenmatch.calculos.Clasificacion;
+
 //aplico herencia con extends
-public class Peliculas extends Titulo {
+public class Peliculas extends Titulo implements Clasificacion {
     //atributos
    private String director;
 
@@ -13,5 +16,11 @@ public class Peliculas extends Titulo {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClasificacion() {
+        //realizo un casteo
+        return (int) calcularMedia();
     }
 }

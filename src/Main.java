@@ -4,6 +4,8 @@ import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Peliculas;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         //creo un objeto
@@ -68,10 +70,23 @@ public class Main {
 
         filtroRecomendacion.filtra(episodio1);
 
+        //nueva implementación
 
+        var peliculaDeKevin = new Peliculas();
+        peliculaDeKevin.setNombre("Interestellar");
+        peliculaDeKevin.setDuracionMinutos(169);
+        peliculaDeKevin.setFechaLanzamiento(2014);
 
+        //cre una lista de peliculas
+        ArrayList<Peliculas> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(peliculaDeKevin);
+        listaDePeliculas.add(pelicula1);
 
+        System.out.println("Tamaño de la lista : "+ listaDePeliculas.size());
+        System.out.println("La primera pelicula es: "+ listaDePeliculas.get(0).getNombre());
 
+        System.out.println(listaDePeliculas);
+        
 
     }
 }

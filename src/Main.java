@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Peliculas;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -53,6 +55,19 @@ public class Main {
         calculadora.incluye(pelicula1);
         calculadora.incluye(casaDragon);
         System.out.println(calculadora.getTiempoTotal());
+
+
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(pelicula1);
+
+        Episodio episodio1 = new Episodio();
+        episodio1.setNombre("La casa");
+        episodio1.setNumero(1);
+        episodio1.setSerie(casaDragon);
+        episodio1.setTotalVisualizaciones(300);
+
+        filtroRecomendacion.filtra(episodio1);
+
 
 
 

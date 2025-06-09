@@ -7,7 +7,15 @@ public class Peliculas extends Titulo implements Clasificacion {
     //atributos
    private String director;
 
-   //metodos getter y setter
+   //creo el constructor
+
+    public Peliculas(String nombre, int duracion, int fechaLanzamiento) {
+        this.setNombre(nombre);
+        this.setDuracionMinutos(duracion);
+        this.setFechaLanzamiento(fechaLanzamiento);
+    }
+
+    //metodos getter y setter
 
 
     public String getDirector() {

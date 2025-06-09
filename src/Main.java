@@ -9,20 +9,18 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         //creo un objeto
-        Peliculas pelicula1 = new Peliculas();
+        Peliculas pelicula1 = new Peliculas("Encanto", 120, 2009);
         //creo atributos
-        pelicula1.setNombre("Encanto");
-        pelicula1.setFechaLanzamiento(2009);
-        pelicula1.setDuracionMinutos(120);
+        //pelicula1.setNombre("Encanto");
+       //pelicula1.setFechaLanzamiento(2009);
+        //pelicula1.setDuracionMinutos(120);
         //imprimo en consola
         System.out.println("Mi pelicula es: "+ pelicula1.getNombre());
         System.out.println("Su fecha de lanzamiento es: "+ pelicula1.getFechaLanzamiento());
         System.out.println("Su duración es: " + pelicula1.getDuracionMinutos() + " minutos.");
 
-        Peliculas pelicula2 = new Peliculas();
-        pelicula2.setNombre("Matrix");
-        pelicula2.setFechaLanzamiento(1998);
-        pelicula2.setDuracionMinutos(180);
+        Peliculas pelicula2 = new Peliculas("matrix", 180, 1998);
+
 
         System.out.println("\nMi pelicula es: "+ pelicula2.getNombre());
         System.out.println("Su fecha de lanzamiento es: "+ pelicula2.getFechaLanzamiento());
@@ -72,10 +70,8 @@ public class Main {
 
         //nueva implementación
 
-        var peliculaDeKevin = new Peliculas();
-        peliculaDeKevin.setNombre("Interestellar");
-        peliculaDeKevin.setDuracionMinutos(169);
-        peliculaDeKevin.setFechaLanzamiento(2014);
+        var peliculaDeKevin = new Peliculas("Interestellar",169, 2014);
+
 
         //cre una lista de peliculas
         ArrayList<Peliculas> listaDePeliculas = new ArrayList<>();
@@ -87,7 +83,6 @@ public class Main {
 
         System.out.println(listaDePeliculas);
 
-        Object objeto  = pelicula1;
 
 
         

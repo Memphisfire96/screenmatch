@@ -86,6 +86,10 @@ public class Main {
         System.out.println("La primera pelicula es: "+ listaDePeliculas.get(0).getNombre());
 
         System.out.println(listaDePeliculas);
+
+        Object objeto  = pelicula1;
+
+
         
 
     }

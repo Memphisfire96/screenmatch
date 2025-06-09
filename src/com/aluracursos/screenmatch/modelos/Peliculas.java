@@ -23,4 +23,14 @@ public class Peliculas extends Titulo implements Clasificacion {
         //realizo un casteo
         return (int) calcularMedia();
     }
+
+    //sobreescribiendo el metodo para obtener nombres de objetos mas relevantes.
+
+    @Override
+    public String toString() {
+        return "Película: " + this.getNombre() + " (" + this.getFechaLanzamiento() + ")";
+    }
 }
+
+
+
